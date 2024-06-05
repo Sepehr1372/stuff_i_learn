@@ -27,3 +27,6 @@ SELECT * FROM some_table ORDER BY some_column
 
 # selecting rows with a specific year (the year format is like this 2019-04-04)
 SELECT * FROM some_table WHERE YEAR(date_column)='2019'
+
+# using AND and OR in filtering 
+SELECT * FROM customers WHERE first_name='Babara' OR last_name='Betchley'
