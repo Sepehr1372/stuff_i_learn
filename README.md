@@ -55,8 +55,6 @@ SELECT * FROM some_table WHERE YEAR(date_column) = 2019;
 ```
 
 ### Using IN for Multiple Value Matches (Selecting only rows where some_column is equal to 'value1' or 'value2')
-
-
 ```sql
 SELECT * FROM some_table WHERE some_column IN ('value1', 'value2');
 ```
