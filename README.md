@@ -102,4 +102,10 @@ SELECT * FROM some_table FROM some_column REGEXP 'some_text'
 Select * FROM some_table WHERE some_column REGEXP '^m|y$'
 ```
 
+### Selecting Rows That Their some_column Value contain 'ey' Or 'ay'
+
+```sql
+SELECT * FROM customers WHERE last_name REGEXP '[ea]y'
+```
+
 
