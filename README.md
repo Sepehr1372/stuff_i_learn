@@ -71,22 +71,35 @@ SELECT * FROM customers WHERE first_name = 'Babara' OR last_name = 'Betchley';
 SELECT * FROM some_table WHERE quantity BETWEEN 100 AND 1000;
 ```
 
-### Selecting Only Rows Starting with 'a'
+### Selecting Only Rows Starting With 'a'
 ```sql
 SELECT * FROM some_table FROM some_column LIKE 'a%'
 ```
 
-### Selecting Only Rows Starting with 'a' and ending with 'y'
+### Selecting Only Rows Starting With 'a' And ending With 'y'
 ```sql
 SELECT * FROM some_table FROM some_column LIKE 'a%' AND some_column LIKE '%y'
 ```
 
-### Selecting Only Rows with five characters and starting with 'a'
+### Selecting Only Rows With Five Characters And Starting With 'a'
 ```sql
 SELECT * FROM some_table FROM some_column LIKE 'a____'
 ```
 
-### Selecting Only Rows containing character 'a':
+### Selecting Only Rows Containing Character 'a':
 ```sql
 SELECT * FROM some_table FROM some_column LIKE '%a%'
 ```
+
+### Matching Wth Regular Expression
+```sql
+SELECT * FROM some_table FROM some_column REGEXP 'some_text'
+```
+
+### Selecting Rows That Their some_column Value Starts With 'm' Or Ends With 'y'
+
+```sql
+Select * FROM some_table WHERE some_column REGEXP '^m|y$'
+```
+
+
