@@ -1,5 +1,4 @@
-# stuff_i_learn
-things i learn every now and then
+# stuff_i_learn: things i learn every now and then
 
 # selecting a database
 USE some_database
