@@ -105,7 +105,11 @@ Select * FROM some_table WHERE some_column REGEXP '^m|y$'
 ### Selecting Rows That Their some_column Value contain 'ey' Or 'ay'
 
 ```sql
-SELECT * FROM customers WHERE last_name REGEXP '[ea]y'
+SELECT * FROM some_table WHERE some_column REGEXP '[ea]y'
+```
+### Selecting Null Rows
+```sql
+SELECT * FROM some_table Where some_column IS NULL
 ```
 ---
 ## REGEX
@@ -120,8 +124,12 @@ SELECT * FROM customers WHERE last_name REGEXP '[ea]y'
 '^some_word'
 ```
 
-### Match Chatacters Containing Character 'r' With a,b,c,d After That
+### Match words Containing Character 'r' With a,b,c,d After That
 ```REGEX
 'r[a-d]'
 ```
+### Matching Words Containing char1 Or char2
 
+```REGEX
+'char1|char2'
+```
