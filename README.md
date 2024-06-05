@@ -19,5 +19,8 @@ SELECT existing_column,existing_column+10 AS 'existing column plus ten' FROM som
 # conditional selecting (select all rows that its coloumn1 value is equal to 'sepehr')
 SELECT column1,column2 FROM some_table WHERE column1='sepehr'
 
-# ordering the table ()
+# ordering the table 
 SELECT * FROM some_table ORDER BY some_column
+
+# commenting out a line
+-- SELECT * FROM some_table
