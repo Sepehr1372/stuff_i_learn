@@ -115,6 +115,21 @@ SELECT * FROM some_table Where some_column IS NULL
 ```sql
 SELECT * FROM some_table ORDER BY some_column DESC
 ```
+
+### Limiting Number Of Rows
+```sql
+SELECT * FROM some_table LIMIT 3
+```
+
+### Selecting Specific Rows (skip 6 then select three)
+```sql
+SELECT * FROM some_table LIMIT 6,3
+```
+
+### Joining Columns of a Table to Some Other Table
+```sql
+SELECT s1.column1,s1.column2 FROM some_table1 s1 JOIN some_table2 s2 ON s1.column1=s2.column1
+```
 ---
 
 ## REGEX
