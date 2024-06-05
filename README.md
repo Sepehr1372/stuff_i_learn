@@ -120,3 +120,8 @@ SELECT * FROM customers WHERE last_name REGEXP '[ea]y'
 '^some_word'
 ```
 
+### Match Chatacters Containing Character 'r' With a,b,c,d After That
+```REGEX
+'r[a-d]'
+```
+
