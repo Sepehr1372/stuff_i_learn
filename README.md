@@ -111,6 +111,9 @@ SELECT * FROM some_table WHERE some_column REGEXP '[ea]y'
 ```sql
 SELECT * FROM some_table Where some_column IS NULL
 ```
+### Ordering a Table Based On Specific Column In Descending Order
+```sql
+SELECT * FROM some_table ORDER BY some_column DESC```
 ---
 ## REGEX
 
