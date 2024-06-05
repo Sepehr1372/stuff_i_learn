@@ -107,5 +107,16 @@ Select * FROM some_table WHERE some_column REGEXP '^m|y$'
 ```sql
 SELECT * FROM customers WHERE last_name REGEXP '[ea]y'
 ```
+---
+## REGEX
 
+### Match Chatacters Ending With Something
+```REGEX
+'some_word$'
+```
+
+### Match Chatacters Starting With Something
+```REGEX
+'^some_word'
+```
 
