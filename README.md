@@ -1,37 +1,69 @@
-# stuff_i_learn: things i learn every now and then
+# Stuff I Learn: Tracking My Learning Journey
 
-#SQL>>
-# selecting a database
-USE some_database
+Welcome to my learning journey! Here, I document the snippets of knowledge I acquire along the way.
 
-# selecting a complete table from a database
-SELECT * FROM some_table
+---
 
-# selecting specific columns from a table
-SELECT column1,column2 FROM some_table
+## SQL
 
-# making a column unique (no duplicates)
+### Selecting a Database
+```sql
+USE some_database;
+```
+
+### Selecting a Complete Table
+```sql
+SELECT * FROM some_table;
+```
+### Selecting Specific Columns
+
+```sql
+SELECT column1, column2 FROM some_table;
+```
+
+### Selecting Unique Values in a Column
+
+```sql
 SELECT DISTINCT column1 FROM some_table
+```
+### Creating a New Calculated Column
 
-# creating a new column from some alreaady existing column
-SELECT existing_column,existing_column+10 AS 'existing column plus ten' FROM some_table
+```sql
+SELECT existing_column, existing_column + 10 AS 'Existing Column Plus Ten' FROM some_table;
+```
 
-# conditional selecting (select all rows that its coloumn1 value is equal to 'sepehr')
-SELECT column1,column2 FROM some_table WHERE column1='sepehr'
+### Conditional Selection (Selecting all rows where the column1 value is equal to 'sepehr')
 
-# ordering the table 
-SELECT * FROM some_table ORDER BY some_column
+```sql
+SELECT column1, column2 FROM some_table WHERE column1 = 'sepehr';
+```
+### Ordering The Table
 
-# commenting out a line
--- SELECT * FROM some_table
+```sql
+SELECT * FROM some_table ORDER BY some_column;
+```
 
-# selecting rows with a specific year (the year format is like this 2019-04-04)
-SELECT * FROM some_table WHERE YEAR(date_column)='2019'
+### Commenting Out a Line
 
-# IN (selecting only rows which its column value is equal to value11 OR value2)
+```sql
+-- SELECT * FROM some_table;
+```
+### Selecting Rows by a Specific Year (Assuming the date format is YYYY-MM-DD)
 
-# using AND and OR in filtering 
-SELECT * FROM customers WHERE first_name='Babara' OR last_name='Betchley'
+```sql
+SELECT * FROM some_table WHERE YEAR(date_column) = 2019;
+```
 
-# selecting only rows thats its some_column value is equal to 'value1' OR 'value2'
-SELECT * FROM some_table WHERE some_coloumn in ('value1','value2')
+### Using IN for Multiple Value Matches (Selecting only rows where some_column is equal to 'value1' or 'value2')
+
+
+```sql
+SELECT * FROM some_table WHERE some_column IN ('value1', 'value2');
+```
+
+###Using AND and OR in Filtering (Selecting rows where either the first_name is 'Babara' or the last_name is 'Betchley')
+
+```sql
+SELECT * FROM customers WHERE first_name = 'Babara' OR last_name = 'Betchley';
+```
+
