@@ -59,9 +59,34 @@ SELECT * FROM some_table WHERE YEAR(date_column) = 2019;
 SELECT * FROM some_table WHERE some_column IN ('value1', 'value2');
 ```
 
-###Using AND and OR in Filtering (Selecting rows where either the first_name is 'Babara' or the last_name is 'Betchley')
+### Using AND and OR in Filtering (Selecting rows where either the first_name is 'Babara' or the last_name is 'Betchley')
 
 ```sql
 SELECT * FROM customers WHERE first_name = 'Babara' OR last_name = 'Betchley';
 ```
 
+### Selecting Rows With Value In a Range
+
+```sql
+SELECT * FROM some_table WHERE quantity BETWEEN 100 AND 1000;
+```
+
+### Selecting Only Rows Starting with 'a'
+```sql
+SELECT * FROM some_table FROM some_column LIKE 'a%'
+```
+
+### Selecting Only Rows Starting with 'a' and ending with 'y'
+```sql
+SELECT * FROM some_table FROM some_column LIKE 'a%' AND some_column LIKE '%y'
+```
+
+### Selecting Only Rows with five characters and starting with 'a'
+```sql
+SELECT * FROM some_table FROM some_column LIKE 'a____'
+```
+
+### Selecting Only Rows containing character 'a':
+```sql
+SELECT * FROM some_table FROM some_column LIKE '%a%'
+```
