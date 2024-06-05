@@ -1,5 +1,6 @@
 # stuff_i_learn: things i learn every now and then
 
+#SQL>>
 # selecting a database
 USE some_database
 
@@ -23,3 +24,6 @@ SELECT * FROM some_table ORDER BY some_column
 
 # commenting out a line
 -- SELECT * FROM some_table
+
+# selecting rows with a specific year (the year format is like this 2019-04-04)
+SELECT * FROM some_table WHERE YEAR(date_column)='2019'
