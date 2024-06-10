@@ -145,7 +145,14 @@ SELECT t1.some_column,t2.some_column from table1 t1 cross join table2 t2 order b
 ```sql
 SELECT * from table1 UNION SELECT * from table2
 ```
-
+### Inserting a Single Row to a Table
+```sql
+INSERT INTO some_table VALUES(DEAFULT,'some_value')
+```
+### Inserting a Single Row to a Table, Only Filling Specific Columns
+```sql
+INSERT INTO some_table (column1,column3) VALUES(value1,value2)
+```
 ---
 ## REGEX
 
