@@ -132,11 +132,15 @@ SELECT s1.column1,s1.column2 FROM some_table1 s1 JOIN some_table2 s2 ON s1.colum
 ```
 ---
 
-### Joining Columns of a Table to Some Other Table Based On a Join Condition With Exactly Thhe Same Column Name
+### Joining Columns of a Table to Some Other Table Based On a Join Condition With Exactly The Same Column Name
 ```sql
 SELECT s1.column1,s1.column2 FROM some_table1 s1 JOIN some_table2 s2 USING(column_name)
 ```
 ---
+### Cross Joining Columns of a Table to Some Other column
+```sql
+SELECT t1.some_column,t2.some_column from table1 t1 cross join table2 t2 order by t1.some_column
+```
 
 ## REGEX
 
