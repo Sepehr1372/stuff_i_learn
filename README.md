@@ -153,6 +153,10 @@ INSERT INTO some_table VALUES(DEAFULT,'some_value')
 ```sql
 INSERT INTO some_table (column1,column3) VALUES(value1,value2)
 ```
+### Creating a Copy of a Table 
+```sql
+CREATE TABLE new_table_name AS SELECT * FROM some_old_table_name
+```
 ---
 ## REGEX
 
