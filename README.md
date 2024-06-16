@@ -161,7 +161,10 @@ CREATE TABLE new_table_name AS SELECT * FROM some_old_table_name
 ```sql
 UPDATE some_table SET column1=blah_blah,column2=blah where column3=blah_blah_blah```
 ```
-
+### Deleting 
+```sql
+DELETE FROM some_table where some_column='something'
+```
 ---
 ## REGEX
 
