@@ -157,6 +157,11 @@ INSERT INTO some_table (column1,column3) VALUES(value1,value2)
 ```sql
 CREATE TABLE new_table_name AS SELECT * FROM some_old_table_name
 ```
+### Updating a Table 
+```sql
+UPDATE some_table SET column1=blah_blah,column2=blah where column3=blah_blah_blah```
+```
+
 ---
 ## REGEX
 
